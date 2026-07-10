@@ -1,0 +1,67 @@
+/* Universal Styling */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Open Sans", sans-serif;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* Common Styling */
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.common-btn{
+    background:#1D4ED8;
+    color:#fff;
+    border:none;
+    padding:15px 30px;
+    border-radius:12px;
+    font-size:20px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.common-btn:hover{
+    background:#1540b8;
+}
+
+/* Header Styling*/
+
+header{
+    background:#ffffff;
+    padding:30px 0;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo img{
+    width:100%;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:24px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#555;
+    font-size:20px;
+    font-weight:500;
+}
+
