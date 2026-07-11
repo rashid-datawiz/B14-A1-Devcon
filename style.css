@@ -1,67 +1,67 @@
 /* Universal Styling */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:"Inter";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
 }
 
-img{
-    max-width:100%;
-    display:block;
+img {
+    max-width: 100%;
+    display: block;
 }
 
 /* Common Styling */
 
-.container{
-    max-width:1200px;
-    margin:auto;
+.container {
+    max-width: 1200px;
+    margin: auto;
 }
 
-.common-btn{
-    background:#1D4ED8;
-    color:#fff;
-    border:none;
-    padding:15px 30px;
-    border-radius:12px;
-    font-size:20px;
-    font-weight:700;
-    cursor:pointer;
+.common-btn {
+    background: #1D4ED8;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
-.common-btn:hover{
-    background:#1540b8;
+.common-btn:hover {
+    background: #1540b8;
 }
 
 /* -- HEADER SECTION STYLING -- */
 
-header{
-    background:#ffffff;
+header {
+    background: #ffffff;
     padding: 20px 20px;
 }
 
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo img{
-    width:100%;
+.logo img {
+    width: 100%;
 }
 
-.nav-links{
-    display:flex;
-    align-items:center;
-    gap:24px;
-    list-style:none;
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    list-style: none;
 }
 
-.nav-links a{
-    text-decoration:none;
-    color:#555;
-    font-size:20px;
-    font-weight:500;
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 /* -- HERO SECTION STYLING -- */
@@ -146,7 +146,7 @@ nav{
 
 .speakers-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
 
@@ -171,7 +171,7 @@ nav{
 
 .speaker-category {
     display: block;
-    color: #2563EB; 
+    color: #2563EB;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
@@ -189,5 +189,148 @@ nav{
 .speaker-info p {
     font-size: 15px;
     color: #575757;
+
+}
+
+/* PRICING SECTION STYLING */
+.pricing-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pricing-header h2 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #0D1B2A;
+    margin-bottom: 10px;
+}
+
+.pricing-header p {
+    font-size: 18px;
+    color: #575757;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* it will take 3 card sections evenly*/
+    gap: 20px;
+}
+
+.pricing-card {
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Highlighted Pro Card */
+.pricing-card.pro-card {
+    background-color: #0D1B2A;
+    color: #ffffff; /* white text*/
+    border: none;
+}
+
+.plan-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.pro-card .plan-name {
+    color: #93C5FD; /* Light blue text for Pro label */
     
+}
+
+.plan-price {
+    font-size: 48px;
+    font-weight: bold;
+    color: #0D1B2A;
+    margin-bottom: 5px;
+}
+
+.pro-card .plan-price {
+    color: #ffffff;
+}
+
+.plan-subtitle {
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 30px;
+}
+
+.pro-card .plan-subtitle {
+    color: #ffffff7c;
+}
+
+/* Horizontal Divider Line */
+.pricing-card hr {
+    border: 0;
+    border-top: 1px solid #E5E7EB;
+    margin-bottom: 30px;
+}
+
+.pro-card hr {
+    border-top: 1px solid #ffffff10;
+    /* Darker line for the dark card */
+}
+
+.plan-features {
+    padding-left: 20px; /* indent for bullets */
+    margin-bottom: 30px;
+    flex-grow: 1; /* this automatically stretches the list so all buttons at the bottom */
+    
+}
+
+.plan-features li {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+.pro-card .plan-features li {
+    color: #ffffff;
+}
+
+/* Standard CSS pseudo element to color just the bullet points */
+.plan-features li::marker {
+    color: #60A5FA;
+}
+
+/* Standard Pricing Buttons */
+.pricing-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.btn-outline-blue {
+    border: 1px solid #2563EB;
+    color: #2563EB;
+}
+
+.btn-solid-blue {
+    background-color: #2563EB;
+    border: 1px solid #2563EB;
+    color: #ffffff;
+}
+
+.btn-outline-dark {
+    border: 1px solid #0D1B2A;
+    color: #0D1B2A;
 }
