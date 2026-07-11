@@ -1,5 +1,4 @@
 /* Universal Styling */
-
 *{
     margin:0;
     padding:0;
@@ -34,7 +33,7 @@ img{
     background:#1540b8;
 }
 
-/* Header Styling*/
+/* -- HEADER SECTION STYLING -- */
 
 header{
     background:#ffffff;
@@ -65,7 +64,7 @@ nav{
     font-weight:500;
 }
 
-/* Hero Styling */
+/* -- HERO SECTION STYLING -- */
 
 
 .hero {
@@ -127,4 +126,68 @@ nav{
 /* Button */
 .hero-content .common-btn {
     padding: 18px 40px;
+}
+
+
+/* --- SPEAKERS SECTION STYLING --- */
+
+.speakers-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    color: #000102;
+    margin-bottom: 50px;
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+}
+
+.speaker-card {
+    width: 100%;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.speaker-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.speaker-info {
+    padding: 24px;
+}
+
+.speaker-category {
+    display: block;
+    color: #2563EB; 
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.speaker-info h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0D1B2A;
+    margin-bottom: 8px;
+}
+
+.speaker-info p {
+    font-size: 15px;
+    color: #575757;
+    
 }
